@@ -1,12 +1,15 @@
 FROM golang:1.23-alpine
 
+RUN apk add --no-cache build-base
+
+
 WORKDIR /pb
 
 COPY . .
 
 RUN go mod tidy
 
-RUN CGO_ENABLED=0 go build -o /pb/pocketbase
+RUN CGO_ENABLED=1 go build -o /pb/pocketbase
 
 EXPOSE 8090
 

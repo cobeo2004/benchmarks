@@ -34,6 +34,18 @@ func (r *runner) deleteRecords() error {
 		// posts100k
 		{"simple (no cascade, no rule)", 100, 10, colPosts100k, ""},
 		{"simple (no cascade, with rule)", 100, 10, colPosts100k, "@request.auth.id != ''"},
+		// posts250k
+		{"simple (no cascade, no rule)", 100, 10, colPosts250k, ""},
+		{"simple (no cascade, with rule)", 100, 10, colPosts250k, "@request.auth.id != ''"},
+		// posts500k
+		{"simple (no cascade, no rule)", 100, 10, colPosts500k, ""},
+		{"simple (no cascade, with rule)", 100, 10, colPosts500k, "@request.auth.id != ''"},
+		// posts1m
+		{"simple (no cascade, no rule)", 100, 10, colPosts1m, ""},
+		{"simple (no cascade, with rule)", 100, 10, colPosts1m, "@request.auth.id != ''"},
+		// posts10m
+		{"simple (no cascade, no rule)", 100, 10, colPosts10m, ""},
+		{"simple (no cascade, with rule)", 100, 10, colPosts10m, "@request.auth.id != ''"},
 		// users
 		{"with cascade deleting all associated posts", 100, 10, colUsers, ""},
 		// organizations

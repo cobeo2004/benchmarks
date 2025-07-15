@@ -38,6 +38,10 @@ func (r *runner) listRecords() error {
 		colPosts25k,
 		colPosts50k,
 		colPosts100k,
+		colPosts250k,
+		colPosts500k,
+		colPosts1m,
+		colPosts10m,
 	}
 	for _, col := range collections {
 		scenarios = append(

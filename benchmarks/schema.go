@@ -1457,6 +1457,450 @@ const schema = `
         ],
         "indexes": [],
         "system": false
+    },
+    {
+        "id": "4hs25k9op99yz3k",
+        "listRule": "",
+        "viewRule": "",
+        "createRule": "",
+        "updateRule": "",
+        "deleteRule": "",
+        "name": "posts250k",
+        "type": "base",
+        "fields": [
+            {
+                "autogeneratePattern": "[a-z0-9]{15}",
+                "hidden": false,
+                "id": "text3208210256",
+                "max": 15,
+                "min": 15,
+                "name": "id",
+                "pattern": "^[a-z0-9]+$",
+                "presentable": false,
+                "primaryKey": true,
+                "required": true,
+                "system": true,
+                "type": "text"
+            },
+            {
+                "autogeneratePattern": "",
+                "hidden": false,
+                "id": "66mifpqo",
+                "max": 0,
+                "min": 0,
+                "name": "title",
+                "pattern": "",
+                "presentable": false,
+                "primaryKey": false,
+                "required": false,
+                "system": false,
+                "type": "text"
+            },
+            {
+                "convertURLs": false,
+                "hidden": false,
+                "id": "kmr7vvh1",
+                "maxSize": 0,
+                "name": "description",
+                "presentable": false,
+                "required": false,
+                "system": false,
+                "type": "editor"
+            },
+            {
+                "hidden": false,
+                "id": "qsc2nx1h",
+                "name": "public",
+                "presentable": false,
+                "required": false,
+                "system": false,
+                "type": "bool"
+            },
+            {
+                "hidden": false,
+                "id": "cv5fb4km",
+                "maxSelect": 3,
+                "name": "type",
+                "presentable": false,
+                "required": false,
+                "system": false,
+                "type": "select",
+                "values": [
+                    "a",
+                    "b",
+                    "c",
+                    "d"
+                ]
+            },
+            {
+                "cascadeDelete": true,
+                "collectionId": "_pb_users_auth_",
+                "hidden": false,
+                "id": "yd8hqwpl",
+                "maxSelect": 1,
+                "minSelect": 0,
+                "name": "author",
+                "presentable": false,
+                "required": false,
+                "system": false,
+                "type": "relation"
+            },
+            {
+                "hidden": false,
+                "id": "autodate2990389176",
+                "name": "created",
+                "onCreate": true,
+                "onUpdate": false,
+                "presentable": false,
+                "system": false,
+                "type": "autodate"
+            },
+            {
+                "hidden": false,
+                "id": "autodate3332085495",
+                "name": "updated",
+                "onCreate": true,
+                "onUpdate": true,
+                "presentable": false,
+                "system": false,
+                "type": "autodate"
+            }
+        ],
+        "indexes": [],
+        "system": false
+    },
+    {
+        "id": "5iu36l0pq00za4l",
+        "listRule": "",
+        "viewRule": "",
+        "createRule": "",
+        "updateRule": "",
+        "deleteRule": "",
+        "name": "posts500k",
+        "type": "base",
+        "fields": [
+            {
+                "autogeneratePattern": "[a-z0-9]{15}",
+                "hidden": false,
+                "id": "text3208210256",
+                "max": 15,
+                "min": 15,
+                "name": "id",
+                "pattern": "^[a-z0-9]+$",
+                "presentable": false,
+                "primaryKey": true,
+                "required": true,
+                "system": true,
+                "type": "text"
+            },
+            {
+                "autogeneratePattern": "",
+                "hidden": false,
+                "id": "77njgqrp",
+                "max": 0,
+                "min": 0,
+                "name": "title",
+                "pattern": "",
+                "presentable": false,
+                "primaryKey": false,
+                "required": false,
+                "system": false,
+                "type": "text"
+            },
+            {
+                "convertURLs": false,
+                "hidden": false,
+                "id": "lns8wwi2",
+                "maxSize": 0,
+                "name": "description",
+                "presentable": false,
+                "required": false,
+                "system": false,
+                "type": "editor"
+            },
+            {
+                "hidden": false,
+                "id": "rtd3oy2i",
+                "name": "public",
+                "presentable": false,
+                "required": false,
+                "system": false,
+                "type": "bool"
+            },
+            {
+                "hidden": false,
+                "id": "dw6gc5ln",
+                "maxSelect": 3,
+                "name": "type",
+                "presentable": false,
+                "required": false,
+                "system": false,
+                "type": "select",
+                "values": [
+                    "a",
+                    "b",
+                    "c",
+                    "d"
+                ]
+            },
+            {
+                "cascadeDelete": true,
+                "collectionId": "_pb_users_auth_",
+                "hidden": false,
+                "id": "ze9irxqm",
+                "maxSelect": 1,
+                "minSelect": 0,
+                "name": "author",
+                "presentable": false,
+                "required": false,
+                "system": false,
+                "type": "relation"
+            },
+            {
+                "hidden": false,
+                "id": "autodate2990389176",
+                "name": "created",
+                "onCreate": true,
+                "onUpdate": false,
+                "presentable": false,
+                "system": false,
+                "type": "autodate"
+            },
+            {
+                "hidden": false,
+                "id": "autodate3332085495",
+                "name": "updated",
+                "onCreate": true,
+                "onUpdate": true,
+                "presentable": false,
+                "system": false,
+                "type": "autodate"
+            }
+        ],
+        "indexes": [],
+        "system": false
+    },
+    {
+        "id": "6jv47m1pr11ab5m",
+        "listRule": "",
+        "viewRule": "",
+        "createRule": "",
+        "updateRule": "",
+        "deleteRule": "",
+        "name": "posts1m",
+        "type": "base",
+        "fields": [
+            {
+                "autogeneratePattern": "[a-z0-9]{15}",
+                "hidden": false,
+                "id": "text3208210256",
+                "max": 15,
+                "min": 15,
+                "name": "id",
+                "pattern": "^[a-z0-9]+$",
+                "presentable": false,
+                "primaryKey": true,
+                "required": true,
+                "system": true,
+                "type": "text"
+            },
+            {
+                "autogeneratePattern": "",
+                "hidden": false,
+                "id": "88okisrq",
+                "max": 0,
+                "min": 0,
+                "name": "title",
+                "pattern": "",
+                "presentable": false,
+                "primaryKey": false,
+                "required": false,
+                "system": false,
+                "type": "text"
+            },
+            {
+                "convertURLs": false,
+                "hidden": false,
+                "id": "mos9xzj3",
+                "maxSize": 0,
+                "name": "description",
+                "presentable": false,
+                "required": false,
+                "system": false,
+                "type": "editor"
+            },
+            {
+                "hidden": false,
+                "id": "sue4pz3j",
+                "name": "public",
+                "presentable": false,
+                "required": false,
+                "system": false,
+                "type": "bool"
+            },
+            {
+                "hidden": false,
+                "id": "ex7hd6mo",
+                "maxSelect": 3,
+                "name": "type",
+                "presentable": false,
+                "required": false,
+                "system": false,
+                "type": "select",
+                "values": [
+                    "a",
+                    "b",
+                    "c",
+                    "d"
+                ]
+            },
+            {
+                "cascadeDelete": true,
+                "collectionId": "_pb_users_auth_",
+                "hidden": false,
+                "id": "af0jsxrn",
+                "maxSelect": 1,
+                "minSelect": 0,
+                "name": "author",
+                "presentable": false,
+                "required": false,
+                "system": false,
+                "type": "relation"
+            },
+            {
+                "hidden": false,
+                "id": "autodate2990389176",
+                "name": "created",
+                "onCreate": true,
+                "onUpdate": false,
+                "presentable": false,
+                "system": false,
+                "type": "autodate"
+            },
+            {
+                "hidden": false,
+                "id": "autodate3332085495",
+                "name": "updated",
+                "onCreate": true,
+                "onUpdate": true,
+                "presentable": false,
+                "system": false,
+                "type": "autodate"
+            }
+        ],
+        "indexes": [],
+        "system": false
+    },
+    {
+        "id": "7kw58n2qr22bc6n",
+        "listRule": "",
+        "viewRule": "",
+        "createRule": "",
+        "updateRule": "",
+        "deleteRule": "",
+        "name": "posts10m",
+        "type": "base",
+        "fields": [
+            {
+                "autogeneratePattern": "[a-z0-9]{15}",
+                "hidden": false,
+                "id": "text3208210256",
+                "max": 15,
+                "min": 15,
+                "name": "id",
+                "pattern": "^[a-z0-9]+$",
+                "presentable": false,
+                "primaryKey": true,
+                "required": true,
+                "system": true,
+                "type": "text"
+            },
+            {
+                "autogeneratePattern": "",
+                "hidden": false,
+                "id": "99pljsrs",
+                "max": 0,
+                "min": 0,
+                "name": "title",
+                "pattern": "",
+                "presentable": false,
+                "primaryKey": false,
+                "required": false,
+                "system": false,
+                "type": "text"
+            },
+            {
+                "convertURLs": false,
+                "hidden": false,
+                "id": "npt0yak4",
+                "maxSize": 0,
+                "name": "description",
+                "presentable": false,
+                "required": false,
+                "system": false,
+                "type": "editor"
+            },
+            {
+                "hidden": false,
+                "id": "tvf5qa4k",
+                "name": "public",
+                "presentable": false,
+                "required": false,
+                "system": false,
+                "type": "bool"
+            },
+            {
+                "hidden": false,
+                "id": "fy8ie7np",
+                "maxSelect": 3,
+                "name": "type",
+                "presentable": false,
+                "required": false,
+                "system": false,
+                "type": "select",
+                "values": [
+                    "a",
+                    "b",
+                    "c",
+                    "d"
+                ]
+            },
+            {
+                "cascadeDelete": true,
+                "collectionId": "_pb_users_auth_",
+                "hidden": false,
+                "id": "bg1ktyor",
+                "maxSelect": 1,
+                "minSelect": 0,
+                "name": "author",
+                "presentable": false,
+                "required": false,
+                "system": false,
+                "type": "relation"
+            },
+            {
+                "hidden": false,
+                "id": "autodate2990389176",
+                "name": "created",
+                "onCreate": true,
+                "onUpdate": false,
+                "presentable": false,
+                "system": false,
+                "type": "autodate"
+            },
+            {
+                "hidden": false,
+                "id": "autodate3332085495",
+                "name": "updated",
+                "onCreate": true,
+                "onUpdate": true,
+                "presentable": false,
+                "system": false,
+                "type": "autodate"
+            }
+        ],
+        "indexes": [],
+        "system": false
     }
 ]
 `

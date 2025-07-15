@@ -224,7 +224,7 @@ func (r *runner) createUsers() error {
 }
 
 func (r *runner) createPosts() error {
-	r.write("## Creating posts (10k, 25k, 50k, 100k)")
+	r.write("## Creating posts (10k, 25k, 50k, 100k, 250k, 500k, 1m, 10m)")
 
 	// revert any schema changes
 	defer r.resetSchema(false)
@@ -256,6 +256,14 @@ func (r *runner) createPosts() error {
 		{25000, 500, colPosts50k, "@request.auth.id != '' && @request.body.public:isset = true", userToken},
 		{50000, 500, colPosts100k, "", ""},
 		{50000, 500, colPosts100k, "@request.auth.id != '' && @request.body.public:isset = true", userToken},
+		{125000, 500, colPosts250k, "", ""},
+		{125000, 500, colPosts250k, "@request.auth.id != '' && @request.body.public:isset = true", userToken},
+		{250000, 500, colPosts500k, "", ""},
+		{250000, 500, colPosts500k, "@request.auth.id != '' && @request.body.public:isset = true", userToken},
+		{500000, 500, colPosts1m, "", ""},
+		{500000, 500, colPosts1m, "@request.auth.id != '' && @request.body.public:isset = true", userToken},
+		{5000000, 500, colPosts10m, "", ""},
+		{5000000, 500, colPosts10m, "@request.auth.id != '' && @request.body.public:isset = true", userToken},
 	}
 
 	for _, s := range scenarios {

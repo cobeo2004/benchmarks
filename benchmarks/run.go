@@ -26,6 +26,10 @@ const (
 	colPosts25k      = "posts25k"
 	colPosts50k      = "posts50k"
 	colPosts100k     = "posts100k"
+	colPosts250k     = "posts250k"
+	colPosts500k     = "posts500k"
+	colPosts1m       = "posts1m"
+	colPosts10m      = "posts10m"
 	colBenchmarks    = "benchmarks"
 )
 
